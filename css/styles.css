@@ -81,7 +81,7 @@ img {
   text-transform: uppercase;
   color: var(--button-bgc);
   align-items: center;
-  padding: 25px 76px 25px 156px;
+  margin: 25px 76px 25px 156px;
 }
 
 .logo-studio {
@@ -283,7 +283,10 @@ li.team-item:nth-child(4) {
 .btn-list {
   display: flex;
   gap: 24px;
-  padding: 96px 427px 72px;
+  margin: 96px 427px 0;
+  flex-direction: row;
+  margin-bottom: 72px;
+  justify-content: center;
 }
 
 .filter-btn {
@@ -301,6 +304,7 @@ li.team-item:nth-child(4) {
   justify-content: center;
   display: block;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .filter-btn:hover,
@@ -312,10 +316,44 @@ li.team-item:nth-child(4) {
   color: var(--white-color);
 }
 
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-basis: calc(100% / 3 - 48px); */
+  margin-bottom: 120px;
+  margin-right: 156px;
+  margin-left: 150px;
+}
+
+.portfolio-card-list > .portfolio-card-item {
+  display: flex;
+  margin-bottom: 48px;
+  margin-right: 24px;
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+}
+
+li.portfolio-card-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+li.portfolio-card-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
 .portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.card-text {
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
