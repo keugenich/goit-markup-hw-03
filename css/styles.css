@@ -334,14 +334,6 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-/* li.portfolio-card-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-li.portfolio-card-item:nth-child(n + 7) {
-  margin-bottom: 0;
-} */
-
 .card-item-link {
   padding: 32px 16px;
   border: 1px solid var(--hairlines);
