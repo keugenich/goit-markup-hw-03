@@ -179,9 +179,8 @@ img {
 /* ABOUT SECTION */
 
 .about-section {
-  padding: 0;
-  margin: 0 156px 120px;
   min-width: 1128px;
+  padding: 120px 0;
 }
 
 .about-section-list {
@@ -189,15 +188,17 @@ img {
   gap: 24px;
 }
 
+.about-section-paragraph {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .about-item-title {
-  display: block;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  width: 264px;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
 }
 
 /* PORTFOLIO SECTION */
