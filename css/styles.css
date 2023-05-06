@@ -67,12 +67,13 @@ img {
 
 .container {
   width: 1158px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -96,8 +97,7 @@ img {
   display: flex;
   gap: 40px;
   align-items: center;
-  padding: 0;
-  margin: 24px 0;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -116,9 +116,6 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
-  align-items: center;
-  padding: 0;
-  margin: 24px 156px 24px 0;
 }
 
 .address-link {
