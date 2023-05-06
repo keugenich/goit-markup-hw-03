@@ -110,8 +110,9 @@ img {
 }
 
 .header-address {
+  display: flex;
   font-style: normal;
-  margin-left: auto;
+  gap: 40px;
 }
 
 .address-list {
@@ -120,8 +121,6 @@ img {
 }
 
 .address-link {
-  display: flex;
-  gap: 40px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
