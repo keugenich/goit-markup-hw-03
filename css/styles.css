@@ -112,7 +112,6 @@ img {
 .header-address {
   display: flex;
   font-style: normal;
-  gap: 40px;
 }
 
 .address-list {
