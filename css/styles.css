@@ -86,7 +86,7 @@ img {
   text-transform: uppercase;
   color: var(--button-bgc);
   align-items: center;
-  /* margin: 25px 76px 25px 156px; */
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -219,7 +219,7 @@ img {
 
 .team-section {
   background-color: var(--light-bgc);
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .team-section-list {
