@@ -112,6 +112,7 @@ img {
 .header-address {
   display: flex;
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
