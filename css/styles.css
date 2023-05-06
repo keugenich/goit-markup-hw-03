@@ -46,7 +46,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
-  margin: 0;
+  margin-bottom: 72px;
 }
 
 img {
@@ -138,7 +138,6 @@ img {
 .hero {
   background-color: var(--dark-color);
   padding: 188px 0;
-  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -206,7 +205,10 @@ img {
 .portfolio-section-list {
   display: flex;
   gap: 24px;
-  padding: 72px 156px 120px;
+}
+
+.portfolio-section-card {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* TEAM SECTION */
@@ -217,25 +219,23 @@ img {
   padding-bottom: 120px;
 }
 
-.team-section-container {
-  margin-left: auto;
-  margin-right: auto;
+.team-section-list {
   display: flex;
-  padding: 72px 156px 0;
+  gap: 24px;
 }
 
-.team-section-container > .team-item {
+.team-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: center;
   margin-right: 24px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 32px;
 }
 
-li.team-item:nth-child(4) {
-  margin-right: 0;
+.team-member {
+  padding: 32px 16px;
 }
 
 .team-card-title {
@@ -244,9 +244,12 @@ li.team-item:nth-child(4) {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin: 0;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-member-position {
+  text-align: center;
 }
 
 /* FOOTER */
@@ -257,13 +260,8 @@ li.team-item:nth-child(4) {
   padding-bottom: 100px;
 }
 
-.footer-text {
-  padding-left: 156px;
-  padding-right: 1020px;
-}
-
 .footer-logo {
-  display: flex;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -271,7 +269,6 @@ li.team-item:nth-child(4) {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--button-bgc);
-  align-items: center;
   margin-bottom: 16px;
 }
 
@@ -281,6 +278,10 @@ li.team-item:nth-child(4) {
 
 .footer .text {
   color: var(--light-bgc);
+}
+
+.footer-text {
+  max-width: 264px;
 }
 
 /* PORTFOLIO PAGE */
