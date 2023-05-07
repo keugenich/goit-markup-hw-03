@@ -20,6 +20,12 @@ body {
   color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 .link {
   text-decoration: none;
 }
@@ -52,6 +58,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* HEADER */
@@ -63,6 +70,7 @@ img {
 
 .header-items {
   display: flex;
+  align-items: center;
 }
 
 .container {
@@ -97,10 +105,10 @@ img {
   display: flex;
   gap: 40px;
   align-items: center;
-  padding: 24px 0;
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -118,7 +126,6 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .address-link {
